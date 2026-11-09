@@ -1,0 +1,78 @@
+// 2a
+int max_versuche = 3;
+int geheimzahl = (int) (Math.random() * 10) + 1;
+// 2b
+for (int i = 0; i <= max_versuche; i++) {
+    if (i < max_versuche) {
+        System.out.println("Runde : " + (i + 1));
+    } else {
+        System.out.println("Maximale Anzahl an Versuchen Überschritten");
+    }
+}
+// 2c
+Scanner sc = new Scanner(System.in);
+for (int i = 0; i <= max_versuche; i++) {
+    if (i < max_versuche) {
+        System.out.println("Runde : " + (i + 1));
+        System.out.println("Gib eine Zahl zwischen 1 und 10 ein:");
+        int rate = sc.nextInt();
+    }else {
+        System.out.println("Maximale Anzahl an Versuchen Überschritten");
+    }
+}
+// 2d
+for (int i = 0; i <= max_versuche; i++) {
+    if (i < max_versuche) {
+        System.out.println("Runde : " + (i + 1));
+        System.out.println("Gib eine Zahl zwischen 1 und 10 ein:");
+        int rate = sc.nextInt();
+        if (rate < geheimzahl) {
+                System.out.println("Die Zahl war zu niedrig!");
+        }else if (rate > geheimzahl) {
+                System.out.println("Die Zahl war zu hoch!");
+        }else {
+                System.out.println("Glückkwunsch! Sie haben die Zahl erraten!");
+        }
+     }else {
+        System.out.println("Maximale Anzahl an Versuchen Überschritten");
+     }
+}
+// 2e
+for (int i = 0; i <= max_versuche; i++) {
+    if (i < max_versuche) {
+        System.out.println("Runde : " + (i + 1));
+        System.out.println("Gib eine Zahl zwischen 1 und 10 ein:");
+        int rate = sc.nextInt();
+        if (rate < geheimzahl) {
+                System.out.println("Die Zahl war zu niedrig!");
+        }else if (rate > geheimzahl) {
+                System.out.println("Die Zahl war zu hoch!");
+        }else {
+                System.out.println("Glückkwunsch! Sie haben die Zahl erraten!");
+                break;
+        }
+     }else {
+        System.out.println("Maximale Anzahl an Versuchen Überschritten");
+     }
+}
+// 2f
+for (int i = 0; i <= max_versuche; i++) {
+    if (i < max_versuche) {
+        System.out.println("Runde : " + (i + 1) + " von 3;");
+        System.out.println("Gib eine Zahl zwischen 1 und 10 ein:");
+        int rate = sc.nextInt();
+        if (rate < geheimzahl) {
+                System.out.println("Die Zahl war zu niedrig!");
+                System.out.println();
+        }else if (rate > geheimzahl) {
+                System.out.println("Die Zahl war zu hoch!");
+                System.out.println();
+        }else {
+                System.out.println("Glückkwunsch! Sie haben die Zahl erraten!");
+                break;
+        }
+     }else {
+        System.out.println("Maximale Anzahl an Versuchen Überschritten");
+        System.out.println("Die Geheimzahl war: " + geheimzahl);
+     }
+}

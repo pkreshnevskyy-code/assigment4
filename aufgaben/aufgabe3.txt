@@ -1,0 +1,30 @@
+// 3a
+Scanner sc = new Scanner(System.in);
+System.out.println("Erste Variable:");
+double Zahl_1 = sc.nextDouble();
+sc.nextLine();
+System.out.println("Rechenoperator eingeben:");
+System.out.println("Zweite Variable:");
+double Zahl_2 = sc.nextDouble();
+sc.nextLine();
+// 3b
+double Ergebnis = 0;
+if (operator.equals("+")) {
+    Ergebnis = (Zahl_1 + Zahl_2);
+}else if (operator.equals("-")) {
+    Ergebnis = (Zahl_1 - Zahl_2);
+}else if (operator.equals("*")) {
+    Ergebnis = (Zahl_1 * Zahl_2);
+}
+// 3c
+System.out.println(Zahl_1 + " " + operator + " " + Zahl_2 + " = " + Ergebnis);
+// 3d
+if (operator.equals("+")) {
+    Ergebnis = (Zahl_1 + Zahl_2);
+}else if (operator.equals("-")) {
+    Ergebnis = (Zahl_1 - Zahl_2);
+}else if (operator.equals("*")) {
+    Ergebnis = (Zahl_1 * Zahl_2);
+}else {
+    System.out.println("Fehler: Ungültiger Rechenoperator");
+}
